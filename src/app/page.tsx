@@ -6,6 +6,8 @@ import Image from "next/image";
 // import FormLogin from "../../../../packages/ui/components/login/form";
 import FormLogin from "@bnext/ui/components/login/form";
 import "@bnext/ui/styles/login/layout.scss";
+import Info from "@bnext/ui/components/login/info";
+import NoSupport from "@bnext/ui/components/login/noSupport";
 
 // import Header from "@bnext/ui/components/HeaderRefactor";
 
@@ -69,6 +71,7 @@ export default function Login() {
           </div>
 
           <div className="cols col2 bottom">
+            <Info />
             <div className="appsName">
               <h4>Branch New EXA Transformation V.1</h4>
               <p>
@@ -78,6 +81,7 @@ export default function Login() {
           </div>
         </div>
       </div>
+      <NoSupport />
     </>
   );
 }

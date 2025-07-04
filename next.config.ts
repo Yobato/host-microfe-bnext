@@ -11,11 +11,11 @@ const nextConfig: NextConfig = {
       // Redirect ke blog zone
       {
         source: '/reservasi',
-        destination: 'http://localhost:4001/reservasi'
+        destination: 'http://localhost:3001/reservasi'
       },
       {
         source: '/reservasi/:path*',
-        destination: 'http://localhost:4001/reservasi/:path*'
+        destination: 'http://localhost:3001/reservasi/:path*'
       }
       // Redirect ke dashboard zone
       // {

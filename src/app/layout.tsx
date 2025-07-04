@@ -4,6 +4,7 @@ import "@bnext/ui/styles/demo/Demos.scss";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import { PrimeReactProvider } from "primereact/api";
+import { LayoutProvider } from "@bnext/context";
 
 
 import "@bnext/ui/styles/lara-light-indigo/theme.css";
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <PrimeReactProvider value={values}>{children}</PrimeReactProvider>
+        <LayoutProvider>
+          <PrimeReactProvider value={values}>{children}</PrimeReactProvider>
+        </LayoutProvider>
       </body>
     </html>
   );
